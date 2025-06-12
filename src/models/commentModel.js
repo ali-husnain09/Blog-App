@@ -6,9 +6,8 @@ const commentSchema = Schema({
     ref: 'Post',
     required: true,
   },
-  userId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+  user: {
+    type: String,
     required: true,
   },
   content: {
